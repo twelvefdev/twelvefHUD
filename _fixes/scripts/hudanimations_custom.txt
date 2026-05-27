@@ -1,0 +1,204 @@
+// Fix Tournament Setup panel overlapping lowered Tournament panel
+
+event HudTournamentSetupPanelOpen
+{
+	Animate HudTournamentSetup	Position	"c-90 -70"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 90"	Spline 0.001 0.2
+}
+
+event HudTournamentSetupPanelClose
+{
+	Animate HudTournamentSetup	Position	"c-90 90"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 -70"	Spline 0.001 0.2
+}
+
+//==================================================================================
+// Fix Snapshop and Replay reminders overlapping the match HUD
+
+event HudSnapShotReminderIn
+{
+	Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ScreenshotPanel		Position	"c-83 25"	Spline 0.001 0.2
+}
+
+event HudReplayReminderIn	// Places the replay reminder in the same place as the snapshot reminder
+{
+	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ReplayReminder		Position	"c-83 25"	Spline 0.001 0.2
+}
+
+event HudReplayReminderIn2	// Puts the panel below the snapshot panel
+{
+	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ReplayReminder		Position	"c-83 65"	Spline 0.001 0.2
+}
+
+//==================================================================================
+// Fix player destruction score not returning to intended position after incrementing
+
+event RDPositiveScorePulse
+{
+	Animate Score			FgColor		"25 255 25 255"		Linear 0.0 0.0
+	Animate Score			FgColor		"TanLight"			Linear 0.1 0.2
+
+	Animate ScoreShadow		FgColor		"0 0 0 200"			Deaccel 0.0 0.05
+	Animate ScoreShadow		FgColor		"Black"				Accel 0.1 0.2
+}
+
+event RDNegativeScorePulse
+{
+	Animate Score			FgColor		"255 75 75 255"		Linear 0.0 0.0
+	Animate Score			FgColor		"TanLight"			Linear 0.1 0.2
+
+	Animate ScoreShadow		FgColor		"0 0 0 200"			Deaccel 0.0 0.05
+	Animate ScoreShadow		FgColor		"Black"				Accel 0.1 0.2
+}
+
+event HudSpyDisguiseChanged
+{
+Animate PlayerStatusSpyOutlineImage		Alpha		"255"			Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage		Position	"230 270"	Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage		Size		"120 120"		Linear 0.0 0.2
+
+RunEvent HudSpyDisguiseHide	0.7
+}
+
+event HudSpyDisguiseHide
+{
+Animate PlayerStatusSpyOutlineImage		Position	"45 430"			Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage		Size		"0 0"			Linear 0.0 0.2
+Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
+}
+
+event CompetitiveGame_LowerChatWindow
+{
+	Animate HudChat ypos r450 Accel 0 0
+}
+
+event CompetitiveGame_RestoreChatWindow
+{
+	Animate HudChat ypos r450 Accel 0 0
+	Animate HudMenu xpos "c-412"	Accel 0 0
+
+    	//Fix stuck animations
+    	RunEvent HudHealthDyingPulseStop 0.1
+    	RunEvent HudHealthBonusPulseStop 0.1
+    	RunEvent HudLowAmmoPulseStop 0.1
+    	RunEvent HudMedicChargedStop 0.1
+	RunEvent SetHudChatAlpha 0
+}
+
+event HudTournament_MoveChatWindow
+{
+	Animate HudChat ypos r450 Accel 0 0
+	Animate HudChat ypos r450 Accel 0 0
+}
+
+//===========================================
+
+event FlagOutlineHide
+{
+	Animate OutlineImage	Alpha		"0"				Linear 0.0 0.1
+}
+
+// Local player flag pickup/drop
+event FlagOutline
+{
+	RunEvent FlagOutlineHide 0.0
+	Animate OutlineImage	Alpha		"255"			Linear 0.1 0.2
+	
+	Animate OutlineImage	Position	"c-50 280"		Linear 0.1 0.2
+	Animate OutlineImage	Size		"100 50"		Linear 0.1 0.2
+
+	Animate OutlineImage	Position	"c-50 r17"		Linear 0.7 0.2	[$WIN32]
+	Animate OutlineImage	Size		"100 50"		Linear 0.7 0.2
+	
+	Animate OutlineImage	Alpha		"0"				Linear 0.9 0.1
+}
+
+event MenuOpen
+{
+	StopEvent	MenuClose 0.0 
+
+	Animate HudMenu xpos "c-412"	 Accel 0 0
+
+	// fade in
+	Animate HudMenu Alpha 		"200"		Linear 0.0 0.2
+	Animate HudMenu SelectionAlpha 	"200"		Linear 0.0 0.2
+	Animate HudMenu MenuColor	"TanLight"	Linear 0.0 0.2
+}
+
+event MenuClose
+{	
+	// Hide it
+
+	Animate HudMenu xpos "c-412" 	Accel 0 0
+
+	Animate HudMenu Alpha 		"0" 		Linear 0.0 0.75
+	Animate HudMenu SelectionAlpha 	"0"		Linear 0.0 0.75
+	Animate HudMenu MenuColor	"255 0 0 255"   Linear 0.0 0.75
+
+	RunEvent MenuPulse 0.0
+}
+
+event MenuPulse
+{
+	Animate HudMenu xpos "c-412" 	Accel 0 0
+}
+
+event SetHudChatAlpha
+{
+//	Animate HudChat bgcolor "0 0 0 0" linear 0.0 0.0
+//	Animate HudChat bgcolor "0 0 0 0" linear 0.0 100.0
+//	Animate HudChatHistory bgcolor "0 0 0 0" linear 0.0 0.0
+//	Animate HudChatHistory bgcolor "0 0 0 0" linear 0.0 100.0
+	
+	Animate HudChat bgcolor "0 0 0 0" linear 0.0 0.0
+	Animate HudChat bgcolor "0 0 0 0" linear 0.0 100.0
+	Animate HudChatHistory bgcolor "0 0 0 0" linear 0.0 0.0
+	Animate HudChatHistory bgcolor "0 0 0 0" linear 0.0 100.0
+	
+	RunEvent SetHudChatAlphaLoop 0.1
+}
+event SetHudChatAlphaLoop
+{
+	RunEvent SetHudChatAlpha 0.1
+}
+
+event SurveyShowSequence
+{
+	// Modified: quickly gets rid of the survey
+	RunEventChild Survey SurveyDelete 0
+
+//	Animate Survey		ypos	480		Linear 0 0
+//	Animate Survey		ypos	150		Linear 1 0.3
+//	Animate Survey		ypos	130		Deaccel 1.3 0.1
+//	Animate Survey		ypos	150		Accel 1.4 0.1
+}
+
+event SurveySubmitSequence
+{
+//	// Show submitting
+//	SetVisible	QuestionContainer	0	0
+//	SetVisible	SubmittingContainer	1	0
+//
+//	// Show thanks
+//	SetVisible	SubmittingContainer	0	2
+//	SetVisible	ThanksContainer		1	2
+//
+//	RunEvent SurveyHideSequence 6
+}
+
+event SurveyDelete
+{
+	FireCommand 0 "delete"
+}
+
+event SurveyHideSequence
+{
+//	SetVisible CloseButton 0 0 
+//
+//	Animate Survey		ypos	130		Deaccel 0 0.3
+//	Animate Survey		ypos	480		Accel	0.3 0.2
+//	RunEventChild Survey SurveyDelete 0.6
+}

@@ -1,0 +1,1 @@
+#base	"../../_tf2hud/resource/ui/hudmediccharge.res"

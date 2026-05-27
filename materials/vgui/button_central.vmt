@@ -1,0 +1,11 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui\button_central"
+	"$translucent" 1
+	"$ignorez" 1
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"%keywords" "tf"
+	"$alphatest" 1
+	"$allowAlphaToCoverage" 1
+}

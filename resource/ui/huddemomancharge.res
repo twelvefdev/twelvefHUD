@@ -1,0 +1,51 @@
+"resource/ui/huddemomancharge.res"
+{	
+	"ChargeMeter"
+	{	
+		"ControlName"	"ContinuousProgressBar"
+		"fieldName"		"ChargeMeter"
+		"font"			"Default"
+		"xpos"			"7"
+		"ypos"			"4"
+		"zpos"			"2"
+		"wide"					"80"
+		"tall"					"7"			
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"Left"
+		"dulltext"		"0"
+		"brighttext"	"0"
+	}			
+	"ChargeLabelAA"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ChargeLabelAA"
+		"xpos"			"15"
+		"ypos"			"4"
+		"zpos"			"4"
+		"wide"			"118"
+		"tall"			"8"
+		"enabled"				"0"
+		"labelText"			"#TF_Charge"
+		"disabledfgcolor2_override" "0 0 0 220"
+		"textAlignment"			"west"
+		"font"				"MMenuPlayListDesc"
+	}	
+	"HPBGFrame"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"HPBGFrame"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"0"
+		"wide"				"92"
+		"tall"				"15"
+		"visible"			"1"
+		"enabled"			"1"
+
+		"proportionaltoaparent"	"1"
+		"border"			"TFFatLineBorder"
+	}
+}
