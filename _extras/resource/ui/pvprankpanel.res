@@ -44,20 +44,20 @@
 				}
 				"CurrentXPLabel"
 				{
-					"xpos"			"s-0.0001"
+					"xpos"			"2"
 				}
 				"ProgressBarsContainer"
 				{
-					"xpos"			"s0.004"
+					"xpos"			"-1"
 					"wide"			"p0.991"
 				}
 			}
 			"Stats"
 			{
-				"ypos"			"rs1.741"
+				"ypos"			"rs2.241"
 				"tall"			"p0.3003"
 				"visible"		"1"
-				"bgcolor_override"	"0 0 0 100"
+				"bgcolor_override"	"0 0 0 0"
 				
 				"GamesLabel"
 				{

@@ -14,7 +14,7 @@
 	}
 	"CycleRankTypeButton"
 	{
-		"xpos"			"cs-0.5-52"
+		"xpos"			"c-64"
 	}
 	"RankTooltipPanel"
 	{
@@ -34,13 +34,13 @@
 	}
 	"WatchStreamButton"
 	{
-		"xpos"			"c65"
-		"ypos"			"370"
+		"xpos"			"c-229"
+		"ypos"			"26"
 	}
 	"QuestLogButton"
 	{
-		"xpos"			"c-15"
-		"ypos"			"370"
+		"xpos"			"c-305"
+		"ypos"			"26"
 	}
 	"EventPromo"
 	{

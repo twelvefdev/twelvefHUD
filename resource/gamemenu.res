@@ -7,6 +7,22 @@
 		"subimage" "glyph_vr"
 		"OnlyWhenVREnabled" "1"
 	}
+	
+	"ReloadSchemeButton"
+	{
+		"label"			""
+		"command"		"engine hud_reloadscheme; toggle mat_aaquality; snd_restart"
+		"subimage" 		""
+		"tooltip" 		"#Tooltip_ReloadScheme"
+	}
+	
+	"ConsoleButton"
+	{
+		"label"			""
+		"command"		"engine toggleconsole"
+		"subimage" 		""
+		"tooltip" 		"#Tooltip_Console"
+	}
 
 	// These buttons are only shown while in-game
 	// and also are positioned by the .res file

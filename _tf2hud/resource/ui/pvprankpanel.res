@@ -344,7 +344,7 @@
 				{
 					"ControlName"	"Label"
 					"fieldName"		"NextLevelXPLabel"
-					"xpos"			"rs1"
+					"xpos"			"rs1-5"
 					"ypos"			"rs1"
 					"zpos"			"0"
 					"wide"			"100"
@@ -363,7 +363,7 @@
 					"Controlname"	"EditablePanel"
 					"fieldName"		"ProgressBarsContainer"
 					"xpos"			"0"
-					"ypos"			"rs1-10"
+					"ypos"			"rs1-8"
 					"wide"			"p1"
 					"tall"			"7"
 					"proportionaltoparent"	"1"
@@ -372,15 +372,15 @@
 					{
 						"ControlName"	"ProgressBar"
 						"fieldName"		"ProgressBar"
-						"xpos"			"0"
+						"xpos"			"cs-0.505"
 						"ypos"			"cs-0.5"
-						"wide"			"f0"
-						"tall"			"f-2"
+						"wide"			"f10"
+						"tall"			"f4"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
 						"progress"		"1"
 
-						"fgcolor_override"	"20 20 20 180"
+						"fgcolor_override"	"20 20 20 100"
 						"bgcolor_override"	"0 0 0 0"
 					}
 
@@ -388,27 +388,29 @@
 					{
 						"ControlName"	"ContinuousProgressBar"
 						"fieldName"		"ContinuousProgressBar"
-						"xpos"			"cs-0.5"
+						"xpos"			"cs-0.505"
 						"ypos"			"cs-0.5"
-						"wide"			"f2"
-						"tall"			"f2"
+						"wide"			"f10"
+						"tall"			"f4"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
+						"paintbackgroundtype"	"1"
 
-						"fgcolor_override"	"CreditsGreen"
+						"fgcolor_override"	"100 255 100 50"
+						"bgcolor_override"	"255 0 0 0"
 					}
 
 					"Frame"
 					{
 						"Controlname"	"EditablePanel"
 						"fieldName"		"Frame"
-						"xpos"			"0"
-						"ypos"			"0"
+						"xpos"			"-1"
+						"ypos"			"-2"
 						"wide"			"f0"
-						"tall"			"f0"
-						"zpos"			"5"
+						"tall"			"f-3"
+						"zpos"			"-1"
 						"proportionaltoparent"	"1"
-						"border"		"InnerShadowBorderThin"
+						"border"		"MainMenuBGBorder"
 					}
 				}
 			}
@@ -423,10 +425,11 @@
 				"tall"			"p0.45"
 				"visible"		"0"
 				"proportionaltoparent"	"1"
-				"bgcolor_override"	"0 0 0 150"
+				"bgcolor_override"	"0 0 0 0"
 
 				"if_mini"
 				{
+					"bgcolor_override"	"0 0 0 0"
 					"visible"		"0"
 				}
 
@@ -434,13 +437,13 @@
 				{
 					"ControlName"	"EditablePanel"
 					"fieldName"		"Frame"
-					"xpos"			"0"
+					"xpos"			"2"
 					"ypos"			"0"
-					"zpos"			"10"
+					"zpos"			"-10"
 					"wide"			"f0"
 					"tall"			"f0"
 					"proportionaltoparent"	"1"
-					"border"		"InnerShadowBorder"
+					"border"		"MainMenuBGBorderAlpha"
 				}
 
 

@@ -5,7 +5,7 @@
 		"delta_item_x"			"25"
 		"delta_item_start_y"	"98"
 		"delta_item_end_y"		"98"
-		"PositiveColor"			"125 255 100"
+		"PositiveColor"			"100 220 100 255"
 		"NegativeColor"			"255 255 100"
 		"delta_lifetime"		"1.0"
 		"delta_item_font"		"HudFontSmall"

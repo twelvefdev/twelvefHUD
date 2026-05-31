@@ -102,10 +102,10 @@
 			
 			"Stats"
 			{
-				"ypos"			"rs1.741"
+				"ypos"			"rs2.241"
 				"tall"			"p0.3003"
 				"visible"		"1"
-				"bgcolor_override"	"0 0 0 100"
+				"bgcolor_override"	"0 0 0 0"
 				
 				"GamesLabel"
 				{
