@@ -25,7 +25,7 @@
 	}
 	"ShowBackpack"
 	{
-		"ypos"				"331"
+		"ypos"				"315"
 	}
 	"PrevPageShortcut"
 	{

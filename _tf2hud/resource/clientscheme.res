@@ -158,21 +158,21 @@ Scheme
 		"QualityColorCollectors"				"170 0 0 255"
 		"QualityColorPaintkitWeapon"			"250 250 250 255"
 
-		"ItemRarityDefault"						"255 215 0 255"
-		"ItemRarityCommon"						"255 215 0 255"
-		"ItemRarityUncommon"					"255 215 0 255"
-		"ItemRarityRare"						"255 215 0 255"
-		"ItemRarityMythical"					"255 215 0 255"
-		"ItemRarityLegendary"					"255 215 0 255"
-		"ItemRarityAncient"						"255 215 0 255"
+		"ItemRarityDefault"						"131 126 119 255"
+		"ItemRarityCommon"						"176 195 217 255"
+		"ItemRarityUncommon"					"94 152 217 255"
+		"ItemRarityRare"						"75 105 255 255"
+		"ItemRarityMythical"					"136 71 255 255"
+		"ItemRarityLegendary"					"211 44 230 255"
+		"ItemRarityAncient"						"235 75 75 255"
 		
-		"ItemRarityDefault_GreyedOut"			"64 54 0  255"
-		"ItemRarityCommon_GreyedOut"			"64 54 0  255"
-		"ItemRarityUncommon_GreyedOut"			"64 54 0  255"
-		"ItemRarityRare_GreyedOut"				"64 54 0  255"
-		"ItemRarityMythical_GreyedOut"			"64 54 0  255"
-		"ItemRarityLegendary_GreyedOut"			"64 54 0  255"
-		"ItemRarityAncient_GreyedOut"			"64 54 0  255"
+		"ItemRarityDefault_GreyedOut"			"44 42 40 255"
+		"ItemRarityCommon_GreyedOut"			"59 65 72 255"
+		"ItemRarityUncommon_GreyedOut"			"31 50 72 255"
+		"ItemRarityRare_GreyedOut"				"25 35 85 255"
+		"ItemRarityMythical_GreyedOut"			"45 24 85 255"
+		"ItemRarityLegendary_GreyedOut"			"70 15 77 255"
+		"ItemRarityAncient_GreyedOut"			"78 25 25 255"
 		
 		"QualityColorNormal_GreyedOut"			"44 44 44 255"
 		"QualityColorrarity1_GreyedOut"			"20 29 21 255"
@@ -259,7 +259,7 @@ Scheme
 
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
-		CheckButton.BgColor				"TransparentBlack"
+		CheckButton.BgColor				"0 0 0 0"
 		CheckButton.Border1  			"Yellow" 		// the left checkbutton border
 		CheckButton.Border2  			"Yellow"		// the right checkbutton border
 		CheckButton.Check				"Yellow"		// color of the check itself
@@ -311,10 +311,10 @@ Scheme
 		ListPanel.EmptyListInfoTextColor	"Orange"
 
 		Menu.TextColor					"TanLight"
-		Menu.BgColor					"TransparentBlack"
-		Menu.ArmedTextColor				"TanDark"
-		Menu.ArmedBgColor				"TanLight"
-		Menu.TextInset					"6"
+		Menu.BgColor					"0 0 0 0"
+		Menu.ArmedTextColor				"TFOrange"
+		Menu.ArmedBgColor				"0 0 0 0"
+		Menu.TextInset					"5"
 
 		Chat.TypingText					"Orange"
 
@@ -345,14 +345,14 @@ Scheme
 		RichText.SelectedTextColor		"Gray"
 		RichText.SelectedBgColor		"Red"
 
-		ScrollBarButton.FgColor				"Gray"
+		ScrollBarButton.FgColor				"TanDark"
 		ScrollBarButton.BgColor				"Blank"
-		ScrollBarButton.ArmedFgColor		"Gray"
+		ScrollBarButton.ArmedFgColor		"TanDark"
 		ScrollBarButton.ArmedBgColor		"Blank"
-		ScrollBarButton.DepressedFgColor	"Black"
+		ScrollBarButton.DepressedFgColor	"TanDarker"
 		ScrollBarButton.DepressedBgColor	"Blank"
 
-		ScrollBarSlider.FgColor				"TanLight"		// nob color
+		ScrollBarSlider.FgColor				"TanDark"		// nob color
 		ScrollBarSlider.BgColor				"Blank"		// slider background color
 
 		SectionedListPanel.HeaderTextColor	"Orange"
@@ -384,10 +384,10 @@ Scheme
 
 		ToggleButton.SelectedTextColor	"Orange"
 
-		Tooltip.TextColor			"TransparentBlack"
+		Tooltip.TextColor			"0 0 0 0"
 		Tooltip.BgColor				"Red"
 
-		TreeView.BgColor			"TransparentBlack"
+		TreeView.BgColor			"0 0 0 0"
 
 		WizardSubPanel.BgColor		"Blank"
 		
@@ -6166,7 +6166,7 @@ Scheme
 		"2" "resource/tfd.ttf"
 		"3"
 		{
-			"font" "resource/tf2.ttf"
+			"font" "resource/tf2_loc.ttf"
 			"name" "TF2"
 			"russian"
 			{
@@ -6179,7 +6179,7 @@ Scheme
 		}
 		"4" 
 		{
-			"font" "resource/tf2secondary.ttf"
+			"font" "resource/tf2secondary_loc.ttf"
 			"name" "TF2 Secondary"
 			"russian"
 			{
@@ -6192,7 +6192,7 @@ Scheme
 		}
 		"5" 
 		{
-			"font" "resource/tf2professor.ttf"
+			"font" "resource/tf2professor_loc.ttf"
 			"name" "TF2 Professor"
 			"russian"
 			{
@@ -6205,7 +6205,7 @@ Scheme
 		}	
 		"6" 
 		{
-			"font" "resource/tf2build.ttf"
+			"font" "resource/tf2build_loc.ttf"
 			"name" "TF2 Build"
 			"russian"
 			{

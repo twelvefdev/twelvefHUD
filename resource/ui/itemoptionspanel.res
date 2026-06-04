@@ -16,6 +16,7 @@
 		"proportionalToParent"	"1"
 		"autohide_scrollbar"	"1"
 		"bgcolor_override"		"0 0 0 0"
+		"paintbackground"	"0"
 
 		"HatUseHeadCheckButton"
 		{
@@ -70,14 +71,14 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"wide"			"140"
-			"tall"			"14"
+			"tall"			"15"
 			"autoResize"	"0"
 			"pinCorner"		"3"
 			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"#TF_Item_SelectStyle"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontSmallestBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -85,6 +86,11 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"Command"		"set_style"
+			"paintbackground"	"0"
+			"fgcolor_override"	"hudoffwhite"
+			"paintborder"		"1"
+			"border_default"	"MainMenuBGBorderAlpha"
+			"border_armed"	"LoadoutItemMouseOverBorder"
 		}
 	}
 }

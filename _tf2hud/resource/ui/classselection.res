@@ -14,6 +14,22 @@
 		"enabled"		"0"
 		"tabPosition"	"0"
 	}
+
+	"TopLine"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TopLine"
+		"xpos"			"c-405"
+		"ypos"			"55"
+		"zpos"			"2"
+		"wide"			"800"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"loadout_dotted_line"
+		"tileImage"		"1"
+		"tileVertically" "0"
+	}
 	
 	"SysMenu"
 	{
@@ -807,8 +823,8 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ResetButton"
-		"xpos"			"r470"
-		"ypos"			"r38"
+		"xpos"				"c4"
+		"ypos"				"402"
 		"zpos"			"6"
 		"wide"			"110"
 		"tall"			"25"
@@ -818,9 +834,24 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_ClassMenu_Reset"
-		"textAlignment"	"center"
+		"textAlignment"	"left"
 		"Command"		"resetclass"
 		"font"			"HudFontSmallBold"
+		
+		"fgcolor"			"HudOffwhite"
+		"defaultFgColor_override" "HudOffwhite"
+		"armedFgColor_override" "tanlight"
+		"depressedFgColor_override" "white"
+		"selectedFgColor_override" "tanlight"
+
+		"defaultBgColor_override" "0 0 0 0"
+		"armedBgColor_override" "0 0 0 0"
+		"depressedBgColor_override" "0 0 0 0"
+		"selectedBgColor_override" "0 0 0 0"
+			
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"	
 	}
 
 	"ClassMenuSelect"

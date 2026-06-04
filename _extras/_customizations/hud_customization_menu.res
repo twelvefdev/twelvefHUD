@@ -221,7 +221,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ShowHUDOptonsButton"
-		"xpos"			"c-191"
+		"xpos"			"c-153"
 		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"32"

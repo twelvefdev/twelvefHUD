@@ -1,4 +1,4 @@
-"resource/ui/genericnotificationtoast.res"
+"Resource/UI/GenericNotificationToast.res"
 {
 	"GenericNotificationToast"
 	{
@@ -69,12 +69,10 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TextLabel"
-		"fgcolor"		"hudoffwhite"
-		"fgcolor_override" "hudoffwhite"
+		"fgcolor_override" "HudOffwhite"
 		"if_high_priority"
 		{
-			"fgcolor"			"BrightYellow"
-			"fgcolor_override"	"BrightYellow"
+			"fgcolor_override"	"TForange"
 			"font"				"StorePromotionsTitle"
 		}
 		"xpos"			"7"

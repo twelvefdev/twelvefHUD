@@ -30,16 +30,16 @@
 	}
 	"Notifications_ShowButtonPanel"
 	{
-		"xpos"			"r215"
+		"xpos"			"c-305"
 	}
 	"WatchStreamButton"
 	{
-		"xpos"			"c-229"
+		"xpos"			"c-191"
 		"ypos"			"26"
 	}
 	"QuestLogButton"
 	{
-		"xpos"			"c-305"
+		"xpos"			"c-267"
 		"ypos"			"26"
 	}
 	"EventPromo"

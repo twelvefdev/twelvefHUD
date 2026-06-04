@@ -243,33 +243,40 @@
 	}	
 	"HUDLogo"
 	{
-		"ControlName"	"CExLabel"
+		"ControlName"	"CExImageButton"
 		"fieldName"		"HUDLogo"
-		"xpos"			"c-422"
-		"ypos"			"438"
+		"xpos"			"c-428"
+		"ypos"			"456"
 		"zpos"			"23"
-		"wide"			"256"
-		"tall"			"64"
+		"wide"			"150"
+		"tall"			"30"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"twelvefHUD"		
+		"labelText"		"twelvefHUD  beta-1.2"		
 		"font"			"HudFontSmallest"
 		"fgcolor_override"		"TanLight"
+		"sound_released"	"ui/kurt.wav"
+		"paintbackground"	"0"
+		"sound_depressed"	""
+		"defaultFgColor_override"	"TanLight"
+		"armedFgColor_override"		"TanLight"
+		"depressedFgColor_override"	"TanLight"
+		"textAlignment"		"west"
 	}	
 	"HUDLogoSS"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"HUDLogoSS"
-		"xpos"			"c-420"
-		"ypos"			"439"
+		"xpos"			"c-421"
+		"ypos"			"457"
 		"zpos"			"23"
-		"wide"			"256"
-		"tall"			"64"
+		"wide"			"150"
+		"tall"			"30"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"twelvefHUD"				
+		"labelText"		"twelvefHUD  beta-1.2"			
 		"font"			"HudFontSmallest"
-		"fgcolor_override"		"0 0 0 112"
+		"fgcolor_override"		"0 0 0 82"
 	}	
 	"MenuBigBG"
 	{
@@ -517,12 +524,28 @@
 		}
 	}	
 
+	"NotifsNoneAlpha"
+	{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"NotifsNoneAlpha"
+			"xpos"			"c-305"
+			"ypos"			"26"
+			"zpos"			"-20"
+			"wide"			"32"
+			"tall"			"32"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"button_Alert"
+			"scaleImage"	"1"
+			"drawcolor"		"190 190 190 255"
+	}
+
 	"Notifications_ShowButtonPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c148"
-		"ypos"			"28"
+		"xpos"			"c48"
+		"ypos"			"26"
 		"zpos"			"10"
 		"wide"			"32"
 		"tall"			"32"
@@ -557,7 +580,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Notifications_CountLabel"
-			"font"			"HudFontSmallestBold"
+			"font"			"HudFontSmall"
 			"labelText"		"%noticount%"
 			"textAlignment"	"center"
 			"xpos"			"16"
@@ -569,7 +592,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"255 255 255 255"
+			"fgcolor_override"	"tandarker"
 		}
 	
 		"Notifications_ShowButtonPanel_SB"
@@ -592,7 +615,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
-			"actionsignallevel" "1"
+			"actionsignallevel" "2"
 
 			"Command"		"noti_show"
 			"navActivate"	"<QuickplayButton"
@@ -770,7 +793,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_ShowButtonPanel"
-		"xpos"			"c-267"
+		"xpos"			"c-229"
 		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"32"
@@ -842,7 +865,7 @@
 		"ypos"			"60"
 		"zpos"			"25"
 		"wide"			"300"
-		"tall"			"300"
+		"tall"			"350"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
@@ -1217,15 +1240,15 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
-		"xpos"			"c0"
-		"ypos"			"102"
+		"xpos"			"c-305"
+		"ypos"			"60"
 		"zpos"			"10"
 		"wide"			"210"
 		"tall"			"80"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
-		"border"		"MainMenuHighlightBorder"
+		"border"		"MainMenuBGBorderAlpha"
 
 		"navUp"			"MOTD_ShowButtonPanel"
 		"navDown"		"SettingsButton"
@@ -1263,12 +1286,17 @@
 
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "tanlight"
+			"armedFgColor_override" "tforange"
+			"depressedFgColor_override" "white"
 			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"200 80 60 255"
+			"defaultbgColor_override" "46 43 42 0"
+			"armedbgColor_override" "235 226 202 0"
+			"depressedbgColor_override" "46 43 42 0"
+			
+			"image_drawcolor"	"235 226 202 255"
+			"image_armedcolor"	"145 73 59 255"
+			
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1300,7 +1328,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"LabelDark"
+			"fgcolor_override"		"tanlight"
 			"wrap"			"1"
 		}
 		
@@ -1313,7 +1341,7 @@
 			"wide"			"210"
 			"tall"			"135"
 			"PaintBackgroundType"	"2"
-			"fgcolor_override"	"117 107 94 255"
+			"fgcolor_override"	"tandark"
 			
 			"Notifications_Control"
 			{
@@ -2146,7 +2174,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ReportPlayerButton"
-		"xpos"			"c+56"
+		"xpos"			"c92"
 		"ypos"			"28"
 		"zpos"			"11"
 		"wide"			"100"
@@ -2219,7 +2247,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVoteButton"
-		"xpos"			"c-153"
+		"xpos"			"c-116"
 		"ypos"			"28"
 		"zpos"			"12"
 		"wide"			"100"
@@ -2290,7 +2318,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MutePlayersButton"
-		"xpos"			"c-48"
+		"xpos"			"c-12"
 		"ypos"			"28"
 		"zpos"			"12"
 		"wide"			"100"
