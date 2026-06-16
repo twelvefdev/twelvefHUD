@@ -28,6 +28,23 @@
 			"angles_z"		"0"
 		}
 	}
+	"SpyDisgIconhud"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"SpyDisgIconhud"
+		"xpos"			"230"
+		"ypos"			"30"
+		"zpos"			"-10"
+		"wide"			"32"
+		"tall"	 		"32"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"scaleImage"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/ico_spy"
+		"alpha"			"150"
+	}
 	"DisguiseStatusBG"
 	{
 		"ControlName"		"CTFImagePanel"

@@ -76,11 +76,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"classmodelpanelBG"
-		"xpos"			"9999"	
-		"ypos"			"9999"
-		"zpos"			"1"		
-		"wide"			"0"
-		"tall"			"0"
+		"xpos"					"9999"
+		"ypos"					"9999"
+		"zpos"					"2"
+		"wide"					"300"
+		"tall"					"250"
 		"visible"		"0"
 		"enabled"		"0"
 	}

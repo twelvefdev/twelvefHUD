@@ -5,7 +5,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusFlagPanel"
 		"xpos"				"0"
-		"ypos"				"0"
+		"ypos"				"-2"
 		"zpos"				"1"
 		"wide"				"f0"
 		"tall"				"480"
@@ -306,7 +306,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
-		"labelText"		"%bluescore%"
+		"labelText"		"%redscore%"
 		"font"			"HudFontMediumBold"
 		"fgcolor"		"TanLight"
 		
@@ -345,7 +345,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
-		"labelText"		"%bluescore%"
+		"labelText"		"%redscore%"
 		"font"			"HudFontMediumBold"
 		"fgcolor"		"0 0 0 100"		
 		
@@ -391,7 +391,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"PLTOFrame"
 		"xpos"				"c-55"
-		"ypos"				"r20"
+		"ypos"				"r25"
 		"zpos"				"0"
 		"wide"				"110"
 		"tall"				"22"
@@ -431,7 +431,7 @@
 		"fieldName"		"PlayingTo"
 		"xpos"			"c-70"	[$WIN32]
 		"xpos"			"c-50"	[$X360]
-		"ypos"			"r24"	[$WIN32]
+		"ypos"			"r28"	[$WIN32]
 		"ypos"			"r48"	[$X360]
 		"zpos"			"4"
 		"wide"			"140"	[$WIN32]
@@ -471,7 +471,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayingToSS"
 		"xpos"			"c-69"	[$WIN32]
-		"ypos"			"r23"	[$WIN32]
+		"ypos"			"r27"	[$WIN32]
 		"zpos"			"4"
 		"wide"			"140"	[$WIN32]
 		"tall"			"30"

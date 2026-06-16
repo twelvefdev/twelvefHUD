@@ -1,16 +1,12 @@
-"resource/ui/huditemeffectmeter_spy.res"
+"resource/ui/huditemeffectmeter_engineer.res"
 {
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r162"	[$WIN32]
-		"ypos"			"r92"	[$WIN32]
-		"xpos_minmode"	"r70"	[$WIN32]
-		"ypos_minmode"	"r74"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"xpos"				"c+318"	[$WIN32]
+		"ypos"			"r104"	[$WIN32]
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -26,23 +22,17 @@
 		"zpos"			"0"
 		"wide"			"76"
 		"tall"			"44"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"	"0"
-		"enabled"		"1"
-		"image"			"../hud/misc_ammo_area_blue"
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/misc_ammo_area_red"
-		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
-		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+		"enabled"		"0"			
 	}
 	
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"25"
-		"ypos"					"27"
+		"xpos"					"99999"
+		"ypos"					"22"
 		"zpos"					"2"
 		"wide"					"41"
 		"tall"					"15"
@@ -56,6 +46,72 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"TFFontSmall"
+	}
+	
+	"ItemEffectMeterCountBorder"
+	{
+		"ControlName"			"Label"
+		"fieldName"				"ItemEffectMeterCountBorder"
+		"xpos"					"35"
+		"ypos"					"-2"
+		"zpos"					"-2"
+		"wide"					"60"
+		"tall"					"23"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontSmallBold"
+		"fgcolor_override" "0 0 0 0"
+		"border" "TFThinLineBorder"
+	}	
+	
+	"ItemEffectMeterIcon"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterIcon"
+		"xpos"					"60"
+		"ypos"					"2"
+		"zpos"					"2"
+		"wide"					"41"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"C"
+		"fgcolor_override" 		"230 230 100 255"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"Icons_12"
+	}
+
+	"ItemEffectMeterIconS"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterIconS"
+		"xpos"					"61"
+		"ypos"					"3"
+		"zpos"					"1"
+		"wide"					"41"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"C"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"Icons_12"
+		"fgcolor_override" "0 0 0 120"
 	}
 
 	"ItemEffectMeter"
@@ -84,10 +140,10 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"25"
-		"ypos"					"10"
+		"xpos"					"47"
+		"ypos"					"3"
 		"zpos"					"2"
-		"wide"					"44"
+		"wide"					"40"
 		"tall"					"20"	
 		"pinCorner"				"2"
 		"visible"				"1"
@@ -97,6 +153,27 @@
 		"textAlignment"			"north"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMediumSmall"
+		"font"					"HudFontSmallBold"
+		"fgcolor_override" "TanLight"
+	}
+	"ItemEffectMeterCountS"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterCountS"
+		"xpos"					"48"
+		"ypos"					"4"
+		"zpos"					"1"
+		"wide"					"40"
+		"tall"					"20"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontSmallBold"
+		"fgcolor_override" "0 0 0 120"
 	}
 }

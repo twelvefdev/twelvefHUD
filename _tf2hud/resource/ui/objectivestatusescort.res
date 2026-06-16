@@ -4,8 +4,8 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusEscort"
-		"xpos"				"c-165"
-		"ypos"				"r140"
+		"xpos"				"c-164"
+		"ypos"				"r150"
 		"zpos"				"1"
 		"wide"				"400"
 		"tall"				"150"
@@ -25,10 +25,10 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"LevelBar"	
-		"xpos"			"73"
+		"xpos"			"100"
 		"ypos"			"123"
 		"zpos"			"0"
-		"wide"			"180"
+		"wide"			"132"
 		"tall"			"4"
 		"visible"		"1"
 		"enabled"		"1"
@@ -68,7 +68,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HomeCPIcon"	
-		"xpos"			"60"
+		"xpos"			"85"
 		"ypos"			"117"
 		"zpos"			"1"
 		"wide"			"16"

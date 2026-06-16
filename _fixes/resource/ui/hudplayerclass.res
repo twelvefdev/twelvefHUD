@@ -10,10 +10,10 @@
 	{
 		"ypos"			"rs2.1"	[$WIN32]
 	}
-	"classBGFrame"
+	"classBGFrame3D"
 	{
 		"ControlName"		"EditablePanel"
-		"fieldName"			"classBGFrame"
+		"fieldName"			"classBGFrame3D"
 		"xpos"				"c-410"
 		"ypos"				"r82"
 		"zpos"				"0"
@@ -25,10 +25,10 @@
 		"proportionaltoaparent"	"1"
 		"border"			"TFThinLineBorder"
 	}
-	"TeamFrame"
+	"TeamFrame3D"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"TeamFrame"
+		"fieldName"		"TeamFrame3D"
 		"xpos"				"c-408"
 		"ypos"				"r57"
 		"zpos"			"-1"

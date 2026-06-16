@@ -1,0 +1,97 @@
+"resource/ui/mvminworldcurrency.res"
+{
+	"BorderBG"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BorderBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"46"
+		"tall"			"14"
+		"visible"		"0"
+		"enabled"		"0"
+		"PaintBackgroundType"	"0"
+		"bgcolor_override"	"TanLight"
+	}	
+	
+	"BackgroundGood"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BackgroundGood"
+		"xpos"			"1"
+		"ypos"			"-10"
+		"zpos"			"2"
+		"wide"			"124"
+		"tall"			"12"
+		"visible"		"0"
+		"enabled"		"0"
+		"PaintBackgroundType"	"0"
+		"bgcolor_override"	"221 182 72 250"	
+	}
+	
+	"MoneyImagePanel"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"MoneyImagePanel"
+		"xpos"			"5"
+		"ypos"			"19"
+		"zpos"		"4"
+		"wide"		"22"
+		"tall"		"22"
+		"image"			"../HUD/mvm_cash"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+	}
+	
+	"CurrencyGood"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CurrencyGood"
+		"font"			"HudFontmediumSmallBold"
+		"fgcolor"		"tanlight"
+		"xpos"			"30"
+		"ypos"			"30"
+		"zpos"			"4"
+		"wide"			"200"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"west"	
+		"labelText"		"%currency%"
+	}
+	
+	"CurrencyBad"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CurrencyBad"
+		"font"			"HudFontMediumSmallBold"
+		"fgcolor"		"tandark"
+		"xpos"			"30"
+		"ypos"			"30"
+		"zpos"			"4"
+		"wide"			"200"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"west"	
+		"labelText"		"%currency%"
+	}
+	"CurrencySa"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CurrencySa"
+		"font"			"HudFontMediumSmallBold"
+		"fgcolor"		"0 0 0 150"
+		"xpos"			"31"
+		"ypos"			"31"
+		"zpos"			"4"
+		"wide"			"200"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"textAlignment"	"west"	
+		"labelText"		"%currency%"
+	}
+}

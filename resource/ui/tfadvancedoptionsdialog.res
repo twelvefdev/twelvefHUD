@@ -84,6 +84,9 @@
 		"brighttext"	"0"
 		"default"		"1"
 		"Command"		"Close"
+		"paintbackground"	"0"
+		"border_default"	"MainMenuBGBorderAlpha"
+		"border_armed"		"LoadoutItemMouseOverBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
@@ -108,6 +111,9 @@
 		"brighttext"	"0"
 		"default"		"1"
 		"Command"		"Ok"
+		"paintbackground"	"0"
+		"border_default"	"MainMenuBGBorderAlpha"
+		"border_armed"		"LoadoutItemMouseOverBorder"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}

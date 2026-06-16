@@ -17,6 +17,8 @@
 		"autohide_scrollbar"	"1"
 		"bgcolor_override"		"0 0 0 0"
 		"paintbackground"	"0"
+		"paintborder"		"0"
+		"fgcolor_override"		"0 0 0 0"
 
 		"HatUseHeadCheckButton"
 		{

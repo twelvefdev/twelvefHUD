@@ -79,6 +79,7 @@
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
+		"fgcolor_override" 	"TanLight"
 		"bgcolor_override" "0 0 0 50"
 	}					
 }

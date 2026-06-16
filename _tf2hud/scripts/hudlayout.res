@@ -69,9 +69,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"	"c-80"	[$WIN32]
-		"ypos"	"r113"	[$WIN32]
+		"ypos"	"r115"	[$WIN32]
 		"wide"			"f0"
-		"tall"			"100"
+		"tall"			"300"
 	}
 	
 	HudDemomanCharge
@@ -144,8 +144,6 @@
 		"ypos" 	"0"
 		"tall"	"480"
 		"RightMargin" "0"
-		"RightMargin_hidef" "32"
-		"RightMargin_lodef" "38"
 		"visible" "1"
 		"enabled" "1"
 		"SmallBoxWide" "72"
@@ -296,8 +294,61 @@
 		"ypos"		"16"	[$X360]		
 		"wide"		"640"
 		"tall"		"480"
+	}
+
+	"bh_BuildPin"
+	{
+		"ControlName"	"Label"
+		"fieldName" "bh_BuildPin"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"-5"	[$WIN32]
+		"ypos"		"140"	[$WIN32]	
+		"wide"		"100"
+		"tall"		"0"
+		"bgcolor_override"	"0 0 0 0"
+	}
+	"bh_BuildPinSpy"
+	{
+		"ControlName"	"Label"
+		"fieldName" "bh_BuildPinSpy"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"-5"	[$WIN32]
+		"ypos"		"140"	[$WIN32]	
+		"wide"		"100"
+		"tall"		"0"
+		"bgcolor_override"	"0 0 0 0"
+	}
+
+	"bh_Menu"
+	{
+		"ControlName"	"Label"
+		"fieldName" "bh_Menu"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"15"	[$WIN32]
+		"ypos"		"125"	[$WIN32]	
+		"wide"		"100"
+		"tall"		"0"
+		"bgcolor_override"	"0 0 0 0"
+	}
+	
+	HudMenu
+	{
+		"fieldName" "HudMenu"
+		"visible" "1"
+		"enabled" "1"
+		"ypos"	"c-150"
+		"zpos" "1"
 		
-		"PaintBackgroundType"	"2"
+		"TextFont"				"FontStoreOriginalPrice"
+		"ItemFont"				"ScoreboardVerySmall"
+		"ItemFontPulsing"		"ScoreboardVerySmall"
+		
+		"pin_to_sibling"		"bh_Menu"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"0"	
 	}
 	
 	BuildingStatus_Engineer
@@ -305,14 +356,18 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"6"
+		"xpos"		"0"
 		"xpos_hidef"		"32"
 		"xpos_lodef"		"40"
-		"ypos"		"140"
-		"wide"		"640"
+		"ypos"		"0"
+		"wide"		"840"
 		"tall"		"480"
 		
 		"PaintBackgroundType"	"2"
+
+		"pin_to_sibling"		"bh_BuildPin"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"0"
 	}
 	
 	HudMannVsMachineStatus
@@ -335,10 +390,8 @@
 		"fieldName"			"CurrencyStatusPanel"
 		"xpos"				"0"
 		"ypos"				"r100"
-		"wide"				"100"
-		"tall"				"100"
-		"xpos_minmode"		"65"
-		"ypos_minmode"		"r88"
+		"wide"				"f0"
+		"tall"				"f0"
 		"visible" 			"0"
 		"enabled" 			"1"
 		
@@ -566,20 +619,7 @@
 		"tall"	 "480"
 	}
 
-	HudMenu
-	{
-		"fieldName" "HudMenu"
-		"visible" "1"
-		"enabled" "1"
-		"ypos"	"c-200"
-		"wide"	 "640"
-		"tall"	 "480"
-		"zpos" "1"
-		
-		"TextFont"				"ScoreboardVerySmall_S"
-		"ItemFont"				"ScoreboardVerySmall_S"
-		"ItemFontPulsing"		"ScoreboardVerySmall_S"
-	}
+
 
 	HudSpellMenu
 	{
@@ -828,7 +868,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"separator_width"		"4"	// distance between the icons (including their backgrounds)
-		"separator_height"		"5"
+		"separator_height"		"15"
 		"height_offset"			"0"	[$WIN32] // distance from the bottom of the panel
 	}
 
@@ -859,11 +899,11 @@
 		"fieldName"				"WinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-251"
-		"ypos"					"205"
-		"wide"					"500"
-		"tall"					"1000"
-		"zpos"					"4"
+		"XPos"										"0"
+		"YPos"										"0"
+		"ZPos"										"10"
+		"Wide"										"f0"
+		"Tall"										"f0"
 		"proportionaltoparent"	"1"
 	}
 
@@ -892,16 +932,12 @@
 	StatPanel
 	{
 		"fieldName"				"StatPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"c-133"
-		"xpos_lodef"			"c-190"
-		"ypos"				"270"
-		"ypos_lodef"			"250"
-		"wide"					"266"
-		"wide_lodef"			"400"
-		"tall"					"120"
-		"tall_lodef"			"190"
+		"visible"				"0"
+		"enabled"				"0"
+		"xpos"					"9999"
+		"ypos"					"9999"
+		"wide"					"0"
+		"tall"					"0"
 	}
 	
 	FreezePanel
@@ -983,8 +1019,8 @@
 		"fieldName" 	"HudMenuEngyBuild"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-55"
+		"xpos"			"c-240"
+		"ypos"			"c-52"
 		"wide"			"450"
 		"tall"			"195"
 		"PaintBackgroundType"	"0"
@@ -995,10 +1031,10 @@
 		"fieldName" 	"HudMenuEngyDestroy"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-59"
+		"xpos"			"c-240"
+		"ypos"			"c-52"
 		"wide"			"450"
-		"tall"			"200"
+		"tall"			"195"
 		"PaintBackgroundType"	"0"
 	}
 
@@ -1007,10 +1043,10 @@
 		"fieldName" 	"HudEurekaEffectTeleportMenu"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-125"
-		"ypos"			"c-55"
-		"wide"			"250"
-		"tall"			"195"
+		"xpos"			"c-240"
+		"ypos"			"c-43"
+		"wide"			"450"
+		"tall"			"200"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -1019,10 +1055,8 @@
 		"fieldName" 	"HudMenuSpyDisguise"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-235"
-		"ypos"			"c-52"
-		"ypos_hidef"	"c-42"
-		"ypos_lodef"	"c-42"
+		"xpos"			"c-240"
+		"ypos"			"c-32"
 		"wide"			"470"
 		"tall"			"200"	[$WIN32]
 		"tall"			"180"	[$X360]
@@ -1122,7 +1156,7 @@
 		"xpos"					"c-125"
 		"ypos"					"5"
 		"ypos_lodef"				"75"
-		"zpos"					"2"
+		"zpos"					"100"
 		"wide"					"250"
 		"tall"					"80"
 	}
@@ -1452,8 +1486,8 @@
 	HudSpectatorExtras
 	{
 		"fieldName" "HudSpectatorExtras"
-		"visible" "1"
-		"enabled" "1"
+		"visible" "0"
+		"enabled" "0"
 		"xpos"	"0"
 		"ypos"	"0"
 		"wide"	"f0"

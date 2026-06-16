@@ -8,12 +8,13 @@
 		"ypos"			"2"
 		"zpos"			"-1"
 		"wide"			"200"
-		"tall"			"35"
+		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../HUD/tournament_panel_brown"
+		"alpha"			"255"
+		"image"			"../vgui/button_holder_central"
 
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
@@ -26,8 +27,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"WaveCountLabel"
-		"font"			"HudFontSmallestBold"
-		"fgcolor"		"TanLight"
+		"font"			"HudFontSmallest"
+		"fgcolor"		"tanlight"
 		"xpos"			"200"
 		"ypos"			"6"
 		"zpos"			"3"
@@ -55,7 +56,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"
 		"PaintBackgroundType" "2"
-		"bgcolor_override"	"TanLight"
+		"bgcolor_override"	"0 0 0 0"
 		
 		if_verbose
 		{
@@ -67,7 +68,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SupportLabel"
-		"font"			"HudFontSmallestBold"
+		"font"			"HudFontSmallest"
 		"fgcolor"		"TanLight"
 		"xpos"			"55"
 		"ypos"			"6"
@@ -114,7 +115,7 @@
 		"fieldName"		"ProgressBarBG"
 		"xpos"			"210"
 		"ypos"			"19"
-		"zpos"			"3"
+		"zpos"			"4"
 		"wide"			"180"
 		"tall"			"12"
 		"xpos_minmode"	"230"
@@ -122,7 +123,8 @@
 		"wide_minmode"	"140"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../HUD/tournament_panel_tan"
+		"image"			"../HUD/color_panel_brown"
+		"alpha"		"220"
 		
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"

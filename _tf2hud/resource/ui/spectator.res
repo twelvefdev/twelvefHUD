@@ -4,11 +4,11 @@
 	{
 		"ControlName"		"Frame"
 		"fieldName"		"Spectator"
-		"tall"			"480"
+		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"		"0"
 	}
 	"specgui"
@@ -60,12 +60,12 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"c-210"	[$WIN32]
-		"wide"			"200"	[$WIN32]
+		"xpos"			"c-125"	[$WIN32]
+		"ypos"			"c120"	[$WIN32]
+		"wide"			"250"	[$WIN32]
 		"wide"			"400"	[$X360]
 		"zpos"			"12"
-		"tall"			"20"
+		"tall"			"21"
 		"tall_hidef"		"23"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -74,8 +74,10 @@
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"		"center"
 		"use_proportional_insets_minmode"	"1"
-		"textinsetx_minmode"				"5"
-		"font"			"HudFontSmall"
+		"textinsetx"				"0"
+		"font"			"HudFontSmallest"
+		"border"	"TFthinlineborder"
+		"fgcolor_override"			"tanlight"
 	}
 	"ReinforcementsLabelBG"
 	{
@@ -87,8 +89,8 @@
 		"wide"			"505"	[$WIN32]
 		"tall"			"40"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"border"		"MainMenuBGBorder"
 	}
 	"BuyBackLabel"
@@ -361,8 +363,8 @@
 		"fieldName"		"spectator_extras"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"480"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"

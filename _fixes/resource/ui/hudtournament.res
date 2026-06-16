@@ -4,6 +4,6 @@
 {
 	HudTournament
 	{
-		"ypos"			"25"
+		"ypos"			"0"
 	}
 }

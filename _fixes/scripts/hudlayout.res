@@ -13,11 +13,10 @@
 	"CurrencyStatusPanel"
 	{
 		"zpos"			"1"
-		"xpos_minmode"	"135"
 	}
 	HudDeathNotice
 	{
-		"ypos"			"36"	[$WIN32]
+		"ypos"			"42"	[$WIN32]
 	}
 	HudStopWatch
 	{

@@ -12,6 +12,43 @@ event HudTournamentSetupPanelClose
 	Animate HudTournamentSetup	Position	"c-90 -70"	Spline 0.001 0.2
 }
 
+event HintMessageHide
+{
+    Animate  HudHintDisplay  FgColor  "255 220 0 0"  Linear  0.0  0.2
+    Animate  HudHintDisplay  HintSize  "0"  Deaccel  0.2  0.3
+	Animate VoiceMenuBG 		Alpha 		"0"		Linear 0.0 0.75	
+    RunEvent  Engineer  0.0
+}
+
+event Engineer
+{
+    Animate  SentryGun  Position  "110 244"  Linear  0.0  0.0
+    Animate  Dispenser  Position  "110 290"  Linear  0.0  0.0
+    Animate  TeleIn  Position   "615 247"  Linear  0.0  0.0
+    Animate  TeleOut  Position   "615 280"  Linear  0.0  0.0
+    Animate  Sapper  Position   "507 435"  Linear  0.0  0.0
+}
+
+event HudMedicCharged
+{
+	Animate	ChargeLabel 	FgColor		"0 0 0 220"		Linear 0.0 0.1
+	Animate	ChargeLabel 	FgColor		"0 0 0 220"		Linear 0.3 0.4
+	
+	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"166 217 125 255"		Linear 0.3 0.4
+
+	RunEvent HudMedicChargedLoop	0.6
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate	ChargeLabel 	FgColor		"0 0 0 220"		Linear 0.0 0.0001
+	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.0001
+}
+
 //==================================================================================
 // Fix Snapshop and Replay reminders overlapping the match HUD
 
@@ -77,8 +114,8 @@ event CompetitiveGame_LowerChatWindow
 
 event CompetitiveGame_RestoreChatWindow
 {
-	Animate HudChat ypos r450 Accel 0 0
-	Animate HudMenu xpos "c-412"	Accel 0 0
+		Animate HudChat ypos r450 Accel 0 0
+    	RunEvent  Engineer  0.02
 
     	//Fix stuck animations
     	RunEvent HudHealthDyingPulseStop 0.1
@@ -90,7 +127,6 @@ event CompetitiveGame_RestoreChatWindow
 
 event HudTournament_MoveChatWindow
 {
-	Animate HudChat ypos r450 Accel 0 0
 	Animate HudChat ypos r450 Accel 0 0
 }
 
@@ -120,30 +156,26 @@ event MenuOpen
 {
 	StopEvent	MenuClose 0.0 
 
-	Animate HudMenu xpos "c-412"	 Accel 0 0
-
 	// fade in
-	Animate HudMenu Alpha 		"200"		Linear 0.0 0.2
-	Animate HudMenu SelectionAlpha 	"200"		Linear 0.0 0.2
+	Animate HudMenu Alpha 		"255"		Linear 0.0 0.2
+	Animate VoiceMenuBG 		Alpha 		"100"		Linear 0.0 0.2
+	Animate HudMenu SelectionAlpha 	"255"		Linear 0.0 0.2
 	Animate HudMenu MenuColor	"TanLight"	Linear 0.0 0.2
 }
 
 event MenuClose
 {	
 	// Hide it
-
-	Animate HudMenu xpos "c-412" 	Accel 0 0
-
 	Animate HudMenu Alpha 		"0" 		Linear 0.0 0.75
 	Animate HudMenu SelectionAlpha 	"0"		Linear 0.0 0.75
 	Animate HudMenu MenuColor	"255 0 0 255"   Linear 0.0 0.75
+	Animate VoiceMenuBG 		Alpha 		"0"		Linear 0.0 0.75
 
 	RunEvent MenuPulse 0.0
 }
 
 event MenuPulse
 {
-	Animate HudMenu xpos "c-412" 	Accel 0 0
 }
 
 event SetHudChatAlpha

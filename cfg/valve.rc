@@ -15,7 +15,7 @@ stuffcmds
 
 // display the startup level
 startupmenu
-
+tf_forced_holiday 2 // Make spells work in loadouts on start
 sv_unlockedchapters 99
 
 // HUD Settings

@@ -11,7 +11,7 @@
 		"tall"			"65"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_brown"
 
@@ -22,14 +22,30 @@
 		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"8"	
 	}
+	"HudTournamentSetupBG_2"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"		"HudTournamentSetupBG_2"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"180"
+		"tall"			"65"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"		"MainMenuBGborder"
+	}
 
 	"TournamentSetupLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TournamentLabel"
 		"font"			"HudFontSmallBold"
-		"xpos"			"8"
-		"ypos"			"0"
+		"xpos"			"0"
+		"fgcolor_override"	"hudoffwhite"
+		"ypos"			"-2"
 		"zpos"			"1"
 		"wide"			"180"
 		"tall"			"35"
@@ -39,7 +55,7 @@
 		"enabled"		"1"
 		"wrap"			"0"
 		"labelText"		"%tournamentstatelabel%"
-		"textAlignment"		"west"
+		"textAlignment"		"center"
 	}
 
 	"TournamentTeamNameLabel"

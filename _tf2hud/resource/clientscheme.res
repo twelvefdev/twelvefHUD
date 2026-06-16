@@ -106,7 +106,7 @@ Scheme
 		// Building HUD Specific
 		"LowHealthRed"		"255 0 0 255"
 		"ProgressOffWhite"	"251 235 202 255"
-		"ProgressBackground"	"250 234 201 51"
+		"ProgressBackground"	"250 234 201 75"
 		"HealthBgGrey"		"72 71 69 255"
 		
 		"ProgressOffWhiteTransparent"	"251 235 202 128"
@@ -329,9 +329,9 @@ Scheme
 		CircularProgressBar.FgColor		"TanLight"
 		CircularProgressBar.BgColor		"0 0 0 50"
 		
-		"BuildingHealthBar.BgColor"		"HealthBgGrey"
-		"BuildingHealthBar.Health"		"ProgressOffWhite"
-		"BuildingHealthBar.LowHealth"	"LowHealthRed"
+		"BuildingHealthBar.BgColor"		"TanDark"
+		"BuildingHealthBar.Health"		"HudOffWhite"
+		"BuildingHealthBar.LowHealth"	"235 50 50 255"
 
 		PropertySheet.TextColor			"Orange"
 		PropertySheet.SelectedTextColor	"Orange"
@@ -421,9 +421,9 @@ Scheme
 		"HudIcon_Red"		"160 0 0 255"
 
 		// CHudMenu
-		"ItemColor"		"255 167 42 200"	// default 255 167 42 255
-		"MenuColor"		"233 208 173 255"
-		"MenuBoxBg"		"0 0 0 100"
+		"ItemColor"		"200 187 161 255"	// default 255 167 42 255
+		"MenuColor"		"200 187 161 255"
+		"MenuBoxBg"		"0 0 0 0"
 
 		// weapon selection colors
 		"SelectionNumberFg"		"251 235 202 255"
@@ -2594,6 +2594,61 @@ Scheme
 				"antialias" 	"1"
 			}
 		}	
+		"IconsChar_32"
+		{
+			"1"
+			{
+				"name"		"TF2 Character Icons"
+				"tall"		"32"
+				"weight"	"600"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	 
+		"IconsChar_36"
+		{
+			"1"
+			{
+				"name"		"TF2 Character Icons"
+				"tall"		"36"
+				"weight"	"600"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	 
+		"IconsChar_38"
+		{
+			"1"
+			{
+				"name"		"TF2 Character Icons"
+				"tall"		"38"
+				"weight"	"600"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	 
+		"IconsChar_42"
+		{
+			"1"
+			{
+				"name"		"TF2 Character Icons"
+				"tall"		"42"
+				"weight"	"600"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	 
+		"IconsChar_48"
+		{
+			"1"
+			{
+				"name"		"TF2 Character Icons"
+				"tall"		"48"
+				"weight"	"600"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	 
 		"TeamMenu"
 		{
 			"1"

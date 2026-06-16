@@ -81,6 +81,24 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
+
+	"SpyDisgIconhud"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"SpyDisgIconhud"
+		"xpos"			"52"
+		"ypos"			"31"
+		"zpos"			"0"
+		"wide"			"64"
+		"tall"	 		"64"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"scaleImage"	"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"ico_spy"
+		"drawcolor"		"hudoffwhite"
+	}
 	
 	"WeaponNameLabel"
 	{	
